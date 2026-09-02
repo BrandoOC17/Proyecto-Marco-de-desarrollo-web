@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videojuegos - Infinity Station</title>
+
+
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+    <!-- Estilos personalizados -->
+    <link rel="stylesheet" href="../estilos.css">
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="../imagenes/favicon.ico" type="image/x-icon">
+
+    <!-- Enlazar HTML con fuentes externas de Google Fonts -->
+    <!-- Google Fonts Poppins -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
+    <!-- Fuente Open Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"rel="stylesheet">
+
+    <!-- Font-Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+</head>
+
+<body>
+
+    <!--CABECERA-->
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container">
+            <a class="navbar-brand" href="../../pagina.html">
+                <img src="../imagenes/logo_infinitystation.png" alt="Infinity Station" width="100" height="80">
+            </a>
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" aria-current="page" href="../../pagina.html">Inicio</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="detalle.html">Detalle</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active " href="videojuegos.html">Videojuegos</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="contacto.html">Contáctanos</a>
+                        </li>
+                        <li class="nav-item mx-3">
+                            <a class="nav-link active" href="login.html">Iniciar sesión</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contenido principal de la página -->
+    <main>
+        <!-- Productos -->
+        <section id="productos" class="padding-xl">
+            <div class="container">
+                <!-- Subtítulo con ícono -->
+                <div class="subtitulo">
+                    <i class="fa-brands fa-playstation"></i>
+                    <h4>Últimas novedades</h4>
+                </div>
+
+                <!-- Título principal -->
+                <h2 class="titulo">Nuestros productos destacados</h2>
+                <!-- Primera fila -->
+                <div class="row row-cols-1 row-cols-md-4 g-4 padding-xs">
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/call_of_duty_black_ops3.jpg" class="card-img-top"
+                                alt="Call of Duty Black OPS III">
+                            <div class="card-body">
+                                <h5 class="card-title">Call of Duty: Black OPS III</h5>
+                                <p class="card-text">S/ 89.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/fc26.png" class="card-img-top" alt="EA Sports FC 26">
+                            <div class="card-body">
+                                <h5 class="card-title">EA Sports FC 26</h5>
+                                <p class="card-text">S/ 280.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/marvel_spider_man2.png" class="card-img-top" alt="Marvel Spider-Man 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Marvel Spider-Man 2</h5>
+                                <p class="card-text">S/ 310.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/astrobot.png" class="card-img-top" alt="Astro Bot">
+                            <div class="card-body">
+                                <h5 class="card-title">Astro Bot</h5>
+                                <p class="card-text">S/ 206.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Segunda fila -->
+                <div class="row row-cols-1 row-cols-md-4 g-4 padding-xs">
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/god_of_war_ragnarok.png" class="card-img-top" alt="God of War Ragnarok">
+                            <div class="card-body">
+                                <h5 class="card-title">God of War Ragnarok</h5>
+                                <p class="card-text">S/ 150.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/the_last_of_us_part2.png" class="card-img-top"
+                                alt="The Last of Us Part II">
+                            <div class="card-body">
+                                <h5 class="card-title">The Last of Us Part II</h5>
+                                <p class="card-text">S/ 179.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/horizont_zero_dawn_remastered.png" class="card-img-top"
+                                alt="Horizont Zero Dawn Remastered">
+                            <div class="card-body">
+                                <h5 class="card-title">Horizont Zero Dawn</h5>
+                                <p class="card-text">S/ 150.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/gran_turismo7.png" class="card-img-top" alt="Gran Turismo 7">
+                            <div class="card-body">
+                                <h5 class="card-title">Gran Turismo 7</h5>
+                                <p class="card-text">S/ 165.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Tercera fila -->
+                <div class="row row-cols-1 row-cols-md-4 g-4 padding-xs">
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/uncharted4.jpg" class="card-img-top" alt="Uncharted 4">
+                            <div class="card-body">
+                                <h5 class="card-title">Uncharted 4</h5>
+                                <p class="card-text">S/ 69.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/resident_evil3.jpg" class="card-img-top" alt="Resident Evil 3">
+                            <div class="card-body">
+                                <h5 class="card-title">Resident Evil 3</h5>
+                                <p class="card-text">S/ 120.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/red_dead_redemption2.jpg" class="card-img-top"
+                                alt="Red Dead Redemption II">
+                            <div class="card-body">
+                                <h5 class="card-title">Red Dead Redemption II</h5>
+                                <p class="card-text">S/ 150.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card">
+                            <img class="img-fluid" src="../imagenes/ghost.jpg" class="card-img-top" alt="Ghost of Tsushima">
+                            <div class="card-body">
+                                <h5 class="card-title">Ghost of Tsushima</h5>
+                                <p class="card-text">S/ 170.99</p>
+                                <div class="d-flex justify-content-between">
+                                    <button class="btn btn-primary">Comprar</button>
+                                    <button class="btn btn-outline-secondary" data-bs-toggle="modal" data-bs-target="#cartModal">Agregar al carro</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h5>Infinity Station</h5>
+                    <p>Tu estación infinita de entretenimiento</p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Contacto</h5>
+                    <p>Email: <a href="mailto:info@infinitystation.com">info@infinitystation.com</a></p>
+                </div>
+
+                <div class="footer-section">
+                    <h5>Síguenos</h5>
+                    <div class="social-links">
+                        <a href="#" title="Facebook"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#" title="Twitter"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="#" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" title="YouTube"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2026 Infinity Station. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Boton scrollUp -->
+    <a href="#" class="btn btn-primary rounded-0 position-fixed bottom-0 end-0 m-4 d-none" id="scrollUpBtn">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <!-- Modal de producto agregado -->
+    <div class="modal fade" id="cartModal" tabindex="-1" aria-labelledby="cartModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header border-0 pb-0">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body text-center pt-0 pb-4">
+                    <i class="fa-solid fa-circle-check text-success fa-3x mb-3"></i>
+                    <h5 class="modal-title mb-2" id="cartModalLabel">¡Éxito!</h5>
+                    <p class="fs-5 mb-0 text-muted">Se agregó correctamente al carro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="../JavaScript/script.js"></script>
+</body>
+</html>
